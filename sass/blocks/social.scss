@@ -1,0 +1,58 @@
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.social__element {
+  margin: 0 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__facebook {
+  width: 10px;
+  height: 22px;
+  fill: $green;
+}
+.social__facebook-mini {
+  width: 6px;
+  height: 13px;
+  fill: $orange;
+}
+
+.social__twitter {
+  width: 26px;
+  height: 21px;
+  fill: $green;
+}
+.social__twitter-mini {
+  width: 13px;
+  height: 10px;
+  fill: $orange;
+}
+
+.social__linkedin {
+   width: 24px;
+   height: 23px;
+   fill: $green;
+ }
+.social__linkedin-mini {
+  width: 13px;
+  height: 12px;
+  fill: $orange;
+}
+
+.social__google {
+  width: 19px;
+  height: 19px;
+  fill: $green;
+}
+.social__google-mini {
+  width: 14px;
+  height: 13px;
+  fill: $orange;
+}

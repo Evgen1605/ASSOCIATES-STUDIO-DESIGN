@@ -1,0 +1,541 @@
+$bgThree: #dfe0d9;
+$bgFour: #f7f7f3;
+$bgSix: #eaeaea;
+$bgEight: #fcfcfc;
+$bgNine: #cecece;
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.project__element--one {
+  background: $thirty;
+  grid-column: span 5;
+  grid-row: span 2;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255,255,255)" strke-width="1"/></svg>');
+  }
+
+  .project__title {
+    font-size: 48px;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: normal;
+    margin: 12.9% 0 13.2% 46.2%;
+
+    @media (min-width: 1500px) {
+      @include dynamicText(300%, 96, 48, 1500px, 3000, 1500);
+    }
+  }
+
+  .project__links {
+    margin-top: 36.5%;
+    margin-left: calc(27.9% - 25px);
+    margin-bottom: 12.9%;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+.project__element--two {
+  background: url("/img/image2.png") right top no-repeat $white;
+  background-size: cover;
+  grid-column: span 6;
+  grid-row: span 2;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image2-2x.png");
+  }
+
+  .project__info {
+    margin-left: 17.5%;
+    margin-top: 14.9%;
+    margin-bottom: 11.4%;
+  }
+
+  .project__counter {
+    margin-left: 19.2%;
+    margin-bottom: 13.1%;
+  }
+}
+
+.project__element--three {
+  background: url("/img/image3.png") left center no-repeat $bgThree;
+  background-size: 100%;
+  grid-column: span 5;
+  grid-row: span 1;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image3-2x.png");
+  }
+
+  .project__like {
+    margin-top: 5.8%;
+  }
+
+  .project__description {
+    max-width: 39%;
+  }
+
+  .project__info {
+    margin-left: 8.6%;
+    margin-top: 7.5%;
+  }
+
+  .project__counter {
+    margin-top: 4%;
+    margin-left: 8.6%;
+    margin-bottom: 5.3%;
+  }
+}
+
+.project__element--four {
+  background: url("/img/image4.png") center top no-repeat $bgFour;
+  background-size: 100%;
+  grid-column: span 5;
+  grid-row: span 2;
+  display: flex;
+  padding-top: 73%;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image4-2x.png");
+  }
+
+  .project__like {
+    margin-top: 0;
+  }
+
+  .project__counter {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 37px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+
+  .project__info {
+    margin-left: 12.9%;
+    margin-right: 4.3%;
+    margin-bottom: 8.6%;
+  }
+
+}
+
+.project__element--five {
+  background: url("/img/image5.png") center top no-repeat;
+  background-size: cover;
+  grid-column: span 3;
+  grid-row: span 2;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image5-2x.png");
+  }
+
+  .project__view {
+    color: $white;
+
+    &:hover {
+      span {
+        border-color: $white;
+      }
+    }
+  }
+
+  .like__btn {
+    svg {
+      fill: $white;
+    }
+  }
+
+  .like__counts {
+    color: #fe7c7c;
+  }
+
+  .project__name, .project__description {
+    color: $white;
+  }
+
+  .project__info, .project__counter {
+    margin-left: 8.3%;
+    margin-top: 14.8%;
+    margin-bottom: 4%;
+  }
+
+  .project__counter {
+    margin-bottom: 70%;
+  }
+
+  .project__like {
+    margin-top: 11%;
+  }
+
+
+}
+
+.project__element--six {
+  background: url("/img/image6.png") center top no-repeat $bgSix;
+  background-size: 100%;
+  grid-column: span 8;
+  grid-row: span 2;
+  display: flex;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image6-2x.png");
+  }
+
+  .project__info {
+    margin-left: 48.1%;
+    margin-top: 12.2%;
+    margin-bottom: 4%;
+  }
+
+  .project__counter {
+    margin-top: 12.2%;
+    margin-bottom: 4%;
+    margin-left: 4.7%;
+  }
+
+  .project__like {
+    margin-top: 16.2%;
+  }
+
+}
+
+.project__element--seven {
+  background: url("/img/image7.png") left top no-repeat $white;
+  background-size: 100%;
+  grid-column: span 5;
+  grid-row: span 1;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image7-2x.png");
+  }
+
+  .project__info {
+    margin-left: 52.6%;
+    margin-top: 10.7%;
+  }
+
+  .project__counter {
+    margin-left: 53.7%;
+    margin-top: 5.3%;
+    margin-bottom: 5.3%;
+  }
+
+  .project__like {
+    margin-top: 9.3%;
+  }
+}
+
+.project__element--eight {
+  background: url("/img/image8.png") center top no-repeat $bgEight;
+  background-size: 100%;
+  grid-column: span 8;
+  grid-row: span 1;
+  display: flex;
+  padding-top: 27.5%;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image8-2x.png");
+  }
+
+  .project__like {
+    margin-top: 0;
+  }
+
+  .project__counter {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 37px;
+    margin-bottom: 3%;
+    flex-basis: 210px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .project__info {
+    margin-left: 20.4%;
+    margin-right: 6.8%;
+    margin-bottom: 3%;
+  }
+
+}
+
+.project__element--nine {
+  background: url("/img/image9.png") center top no-repeat $bgNine;
+  background-size: 100%;
+  grid-column: span 3;
+  grid-row: span 1;
+
+  @media (min-resolution: 2dppx), (min-width: 1500px) {
+    background-image: url("/img/image9-2x.png");
+  }
+
+  .project__info {
+    margin-left: 51.6%;
+    margin-top: 26.6%;
+    margin-bottom: 10%;
+  }
+
+  .project__counter {
+    margin-left: 40%;
+    margin-bottom: 11.6%;
+  }
+
+  .project__like {
+    margin-top: 13.8%;
+  }
+}
+
+.project__element--ten {
+  background: $thirty;
+  grid-column: span 5;
+  grid-row: span 1;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="65%" y2="0" stroke="rgb(255,255,255)" strke-width="1"/></svg>');
+  }
+
+  .project__subtitle {
+    font-size: 14px;
+    color: $colorText;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-left: 21.5%;
+    margin-top: 12.9%;
+    margin-bottom: 0;
+
+    @media (min-width: 1500px) {
+      @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+  }
+
+  .project__links {
+    margin-left: calc(21.5% - 25px);
+    margin-bottom: 32.2%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.project__name {
+  font-size: 24px;
+  font-family: 'roboto_condensedlight';
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 15px 0;
+  font-weight: normal;
+
+  @media (min-width: 1500px) {
+    @include dynamicText(150%, 48, 24, 1500px, 3000, 1500);
+  }
+}
+
+.project__description {
+  font-size: 12px;
+  font-family: 'roboto_condensedlight';
+  color: $colorText;
+  text-transform: uppercase;
+  margin: 0;
+
+  b {
+    font-family: 'roboto_condensedbold';
+    font-weight: normal;
+  }
+
+  @media (min-width: 1500px) {
+    @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+  }
+}
+
+.project__description--lowercase {
+  text-transform: initial;
+}
+
+.project__view {
+  font-size: 18px;
+  font-family: 'roboto_condensedlight';
+  color: $colorText;
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  background: url('/img/arrow-view.svg') left center no-repeat;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  span {
+    border-bottom: 1px solid transparent;
+    transition-property: border-bottom;
+    transition-duration: 500ms;
+  }
+
+  &:hover {
+
+    span {
+      border-color: $colorText;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500);
+  }
+}
+
+.project__like {
+  max-width: 145px;
+  text-align: center;
+  margin: 24% 0 0 0;
+}
+
+
+@media (max-width: 1200px) {
+
+  .project__element--one {
+    .project__title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .project__element--one {
+    grid-column: span 7;
+
+    .project__links {
+      margin-left: calc(20% - 25px);
+    }
+  }
+
+  .project__element--two {
+    grid-column: span 9;
+  }
+
+  .project__element--three {
+    grid-column: span 9;
+    grid-row: span 2;
+  }
+
+  .project__element--four {
+    grid-column: span 7;
+
+    .project__counter {
+      display: block;
+    }
+
+    .project__like {
+      margin-top: 10%;
+    }
+  }
+
+  .project__element--five {
+    grid-column: span 4;
+  }
+
+  .project__element--six {
+    grid-column: span 12;
+  }
+
+  .project__element--seven {
+    grid-column: span 7;
+  }
+  .project__element--eight {
+    grid-column: span 9;
+
+    .project__counter {
+      display: block;
+    }
+
+    .project__like {
+      margin-top: 11%;
+    }
+  }
+  .project__element--nine {
+    grid-column: span 9;
+  }
+  .project__element--ten {
+    grid-column: span 7;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .project__element--two {
+
+    .project__info {
+      margin-left: 8%;
+      margin-top: 7%;
+    }
+    .project__counter {
+      margin-left: 8%;
+      margin-top: 7%;
+      margin-bottom: 3%;
+    }
+  }
+
+  .project__element--four {
+    display: block;
+
+    .project__info {
+      margin-left: 8%;
+      margin-right: 2%;
+    }
+    .project__counter {
+      margin-left: 8%;
+      margin-top: 8%;
+    }
+    .project__like {
+      margin-top: 8%;
+    }
+  }
+  
+  .project__element--six {
+    background-position: -70px 20px;
+    display: block;
+
+    .project__info {
+      margin-left: 40%;
+      margin-top: 6%;
+    }
+
+    .project__counter {
+      margin-left: 62%;
+      margin-top: 6%;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .project {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .project__element--one, .project__element--two, .project__element--three, .project__element--four, .project__element--five, .project__element--six, .project__element--seven, .project__element--eight, .project__element--nine, .project__element--ten  {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
